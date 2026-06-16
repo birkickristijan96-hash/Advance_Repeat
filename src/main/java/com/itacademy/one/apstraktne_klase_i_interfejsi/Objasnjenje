@@ -1,0 +1,9 @@
+Searchable  -> interface
+Preporuka ali ne i nuznost je da se zavrsavaju na able. Ovo je funkcionalni interface. Funkcionakni interface ima samo
+jednu metodu. Search metoda je javna i apstraktna. Search metoda je metoda bez povratne vrijednosti.
+Npomena -> funckionalniinterface mozeda ima metodu i koja vraca vrijednost. Ili jednu ili drugu.
+
+Storable -> interface je najvisi nivo apstrakcije. Sablon po kom se ponasa objekat. Klase koje implementiraju odredeni interface
+ne moraju biti srodne.
+Default metode u interface -> skoro uvedene, ranije nisu mogle biti metode koje nisu abstract, tj koje imaju tjelo.
+-> default metoda u svom tijelu ima kompletnu logiku ali moze da sadrzi i neke druge pomocne metode

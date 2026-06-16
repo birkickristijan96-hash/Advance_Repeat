@@ -1,0 +1,48 @@
+/**
+ * Objasnjenje ->
+ * package -> oznacava da ce se u nastavku naci putanja do kreirane klase, interfejsa, enuma ili neceg drugog
+ * tj do odredenog fajla
+ * public -> odnosi se na modifikator pristupa, sve sto ima ovu rijec je siroko-dostupno sto znaci:
+ *  -> da mu se moze pristupiti iz svake klase, paketa modula itd
+ * class -> u ovom slucaju oznacava kreiranje sablona na osnovu kog ce se kreiirati objekat.
+ * Objekat -> predstavlja entitet izz realnog svijeta koji cemo pokusati modelirati kreiranjem klase tj kreiranjem sablona
+ * Product - > u ovom slucaju ime sablona tj ime klase - preporuka je da se klase imenuju pocetnim velikim slvom za prvi
+ * karkater u imenu i za svaki sljedeci koji oznava novu rijec. Za ime od pozicije dva mozemo koristiti i brojeve
+ * i druge specijale karaktere ..
+ * Abstract - > ukazuje na nesto visi nivo apstrakcije. Kada se kljucna rijec abstract nade uz kljucnu rijec class
+ * ona oznacava -> u pitanju je kreiranje opceg sablona od kog ce kasnije nastati konkretan sablon po kom ce se
+ * kreirati objekti. Modelovanje objekata ili opisivanje pomocu njegovih polja, i njegovog ponasanja pomocu metoda ukazuje na :
+ *  -> princip oop pod nazivom apstrakcija. Jer mi zahvaljujuci apstrakciji opisujemo taj objekat tj entitet iz realnog zivota.
+ *
+ *  Private - > modifikator vidljivosti private ukazuje na privatnu vidljivost sto znaci da se poljima moze direktno pristupiti
+ samo u klasi gdje su kreirane. (To je trenutak u kom se koristi this.imepolja)
+ Kada nase polje ima modifikator private a mi zelimo tom  polju iz druge klase gdje to polje nije inicijalno kreirano
+ moramo da koristimo metode siroke dostupnosti tj one koje su javne. Get i set.
+ Ukoliko zelimo da pristupimo poljima van klase gdje su kreirani. To je enkapsulacija.
+
+
+Konstruktor -> nacin da kreiram instancu klase uz operator new. Sustinski nikad nismo bez konstruktora, jer imamo defaultni
+konstruktor bez parametara.
+U tijelu konstruktora prva naredba koja se nalazi je: naredba super, bilo da smo je mi sami napisali ili da znamo da je
+podrazumijevano tu.
+
+Objasnjenje supera u odnosu na konstruktor - >
+    1. -> slucaj kada tu naredbu ne vidimo eksplicitno je slucaj kada je roditeljski konstruktor zapravo konstruktor
+    bazne klase - > Object
+    2 -> u slucaju da ju mi pisemo i da se eksplicitno vidi u kodu to znaci da postoji direktna roditeljska klasa iz koje
+    smo izveli odredenu podklasu pa samim tim u telu konstruktora prva naredba u tijelu je poziv roditeljskog konstruktora i
+    onda se dalje kklasicno definira polja nase izvedene klase.
+
+
+    toString metoda - > redefinisat cemo ovu metodu.
+    // \n je oznaka za novi red na windowsu,\r\n je oznaka za novi red na Linuks
+    Najbolje je koristiti metodu line separator
+    System.lineSeparator
+    U toStringu se demonstrira oop princip pod nazivom polimorfizam.
+    Override -> isto zaglavlje metode ali razlicita verzija ponasanja - @Override
+    Potoji i drgi oblik gjde se menja i zaglavlje - @Overload(primjer je konstruktor)
+    Overload - > znaci da se mjenja broj args ili tip args
+
+    abstract metoda -> nema telo gdje je kreirana ali klasa koja nije apstraktna vec konkretna i naljeduje nasu apstraktnu klasu
+    Product mora implementirati logiku za apstratknu metodu.
+ */
